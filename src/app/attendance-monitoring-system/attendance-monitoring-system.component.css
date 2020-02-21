@@ -1,0 +1,11 @@
+.AttendanceMonitoringSystemPage {
+  background-color: lightblue; 
+  height: 2000px;
+  width: 100%;
+}
+
+.AttendanceMonitoringSystemPageHeader {
+  background-color: white;
+  height: 110px;;
+  display: flex;
+}
