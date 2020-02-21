@@ -1,0 +1,64 @@
+{
+  "employees": [
+    {
+      "first_name": "Sharmaine",
+      "last_name": "De Guzman"
+    },
+    {
+      "first_name": "Ma. Jonna",
+      "last_name": "Dimapilis"
+    },
+    {
+      "first_name": "Melody Anne",
+      "last_name": "Francisco"
+    },
+    {
+      "first_name": "Frederick",
+      "last_name": "Rosario"
+    },
+    {
+      "first_name": "Angela",
+      "last_name": "Gonzales"
+    },
+    {
+      "first_name": "Oliver",
+      "last_name": "Ignacio"
+    },
+    {
+      "first_name": "Jaime",
+      "last_name": "Bargan"
+    },
+    {
+      "first_name": "Remiel",
+      "last_name": "Jupia"
+    },
+    {
+      "first_name": "Christian Vergel",
+      "last_name": "Ponciano"
+    },
+    {
+      "first_name": "John Ryan",
+      "last_name": "Ramos"
+    },
+    {
+      "first_name": "Maria",
+      "last_name": "Rosaria"
+    },
+    {
+      "first_name": "Jenny",
+      "last_name": "Siquig"
+    },
+    {
+      "first_name": "Roan Kathrina",
+      "last_name": "Dimaculangan"
+    },
+    {
+      "first_name": "Anne",
+      "last_name": "Rivera"
+    },
+    {
+      "first_name": "Zyrelle Marie",
+      "last_name": "Diel"
+    }
+  ]
+}

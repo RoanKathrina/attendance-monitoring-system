@@ -16,11 +16,23 @@
   <div style="width: 1200px; height: 100px; display: flex; margin-left: 20%">
     <div style="display: inline-block">
       <h1>Present</h1>
-      <div style="background-color: white; width: 500px; height: 500px; margin-top: 10px">
+      <div style="background-color: white; width: 500px; height: auto; margin-top: 10px">
         <div style="background-color: yellow; width: 500px; height: 100px; display: flex">
           <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/99bbc942-8501-4ebe-98ce-4a7f23978703/d4ltn7a-6de5cee7-85d4-4787-b8c0-9739142d49de.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzk5YmJjOTQyLTg1MDEtNGViZS05OGNlLTRhN2YyMzk3ODcwM1wvZDRsdG43YS02ZGU1Y2VlNy04NWQ0LTQ3ODctYjhjMC05NzM5MTQyZDQ5ZGUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.N45CGpTP0LhsI_cbZxuwPVWEqhtnUTMDiUvLspdZhKg" style="height: 100px; margin-left: 60px">
           <h1 style="margin-top: 30px">Employee Name</h1>
         </div>
+        <table class="AttendanceMonitoringSystemPageTable">
+          <tr *ngFor="let employee of employees.employees; let i = index" style="cursor: pointer">
+            <td style="font-size: 24px" (click)="setBackgroundColor('employee_'+ i, employee)" id=employee_{{i}}>{{employee.first_name}}, {{employee.last_name}}</td>
+          <tr>
+        </table>
+      </div>
+    </div>
+
+    <div>
+      <div style="position: relative">
+        <img src="https://www.iconsdb.com/icons/preview/red/arrow-xxl.png" style="height: 200px; margin-left: 50px; margin-top: 200px">
+        <h1 style="position: absolute; margin-top: -120px; margin-left: 80px;">Absent</h1>
       </div>
     </div>
   </div>

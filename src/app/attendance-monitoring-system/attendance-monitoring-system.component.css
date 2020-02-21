@@ -9,3 +9,20 @@
   height: 110px;;
   display: flex;
 }
+
+.AttendanceMonitoringSystemPageTable {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+
+table, th, td {
+  border: 3px solid black;
+}
+
+.RedArrowImage {
+  background-image: url(https://www.iconsdb.com/icons/preview/red/arrow-xxl.png);
+  height: 200px;
+  margin-left: 50px;
+  margin-top: 200px;
+}
