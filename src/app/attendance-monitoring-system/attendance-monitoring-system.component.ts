@@ -139,13 +139,36 @@ export class AttendanceMonitoringSystemComponent implements OnInit, AfterViewIni
   }
 
   saveToSessionStorage() {
-    const JSONObj = {
-      "date": this.dateToday,
-      "present": this.present_list,
-      "absent": this.absent_list
+    let JSONAttendance = {};
+    if (window.sessionStorage.getItem('attendance') === null) {
+      // Attendance is not yet initialized
+      JSONAttendance = {
+        "attendance": [
+          {
+            "date": this.dateToday,
+            "present": this.present_list,
+            "absent": this.absent_list
+          }
+        ]
+      }
     }
+    else {
+      // Attendance is initialized already
+      JSONAttendance = {
+        "attendance": [
+          ...JSON.parse(window.sessionStorage.getItem('attendance')).attendance,
+          {
+            "date": this.dateToday,
+            "present": this.present_list,
+            "absent": this.absent_list
+          }
+        ]
+      }
+    }
+
+    console.log(JSONAttendance);
     try {
-      window.sessionStorage.setItem('attendance', JSON.stringify(JSONObj));
+      window.sessionStorage.setItem('attendance', JSON.stringify(JSONAttendance));
     }
     catch(err) {
       window.alert('Error: Error occurred while saving the JSON Object in the Session Storage.')
