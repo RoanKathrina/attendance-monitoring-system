@@ -144,7 +144,12 @@ export class AttendanceMonitoringSystemComponent implements OnInit, AfterViewIni
       "present": this.present_list,
       "absent": this.absent_list
     }
-    window.sessionStorage.setItem('attendance', JSON.stringify(JSONObj));
+    try {
+      window.sessionStorage.setItem('attendance', JSON.stringify(JSONObj));
+    }
+    catch(err) {
+      window.alert('Error: Error occurred while saving the JSON Object in the Session Storage.')
+    }
   }
 
   setPresentclearAbsent() {
@@ -159,5 +164,9 @@ export class AttendanceMonitoringSystemComponent implements OnInit, AfterViewIni
       this.clearColorOfTables();
       this.ngAfterViewInit();
     }
+  }
+
+  goToAttendanceMonitoringSystem() {
+    location.reload();
   }
 }
