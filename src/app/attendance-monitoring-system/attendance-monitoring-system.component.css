@@ -7,7 +7,7 @@
 .AttendanceMonitoringSystemPageHeader {
   background-color: white;
   height: 110px;;
-  display: flex;
+  display: flex;  
 }
 
 .AttendanceMonitoringSystemPageTable {
@@ -18,11 +18,4 @@
 
 table, th, td {
   border: 3px solid black;
-}
-
-.RedArrowImage {
-  background-image: url(https://www.iconsdb.com/icons/preview/red/arrow-xxl.png);
-  height: 200px;
-  margin-left: 50px;
-  margin-top: 200px;
 }
