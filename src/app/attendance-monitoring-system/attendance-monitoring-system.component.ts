@@ -10,7 +10,6 @@ import employees from '../json/employees.json';
 export class AttendanceMonitoringSystemComponent implements OnInit, AfterViewInit{
   
   dateToday;
-  // employees = employees;
   present_list: Array<any> = [...employees.employees];
   absent_list: Array<any> = [];
   fromList: string = 'present';  
@@ -104,13 +103,7 @@ export class AttendanceMonitoringSystemComponent implements OnInit, AfterViewIni
     }
   }
 
-  // setBackgroundColor(fromList) {
-  //   let elementSelected: HTMLElement;
-  //   elementSelected = document.getElementById(fromList + '_0') as HTMLElement;
-  //   elementSelected.style.setProperty('background-color', 'red', 'important');
-
-  // }
-  transferToPresent() {
+  transferNameToPresent() {
     if(this.fromList === 'present') {
       return;
     }
